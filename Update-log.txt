@@ -3,3 +3,5 @@
 <15-2-2024> created components and gave the shenron image and homepage uppertext a change-to prototype.
 
 <16-2-2024> Created components and Gave the Buy now buttons a color hover Prototype. Added on-click prototype on the navigation links for animations.
+
+<17-2-2024> Created 3 new merch components and Gave the picture and merch info a mouse-enter Prototype for animation while scrolling.
