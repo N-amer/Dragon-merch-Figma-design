@@ -1,4 +1,4 @@
-# Dragon-merch-Figma-design
+# Dragonball-merch-Figma-design
 My first design with figma to get used to it.
 
 ## Wanna see my design? 
