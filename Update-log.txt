@@ -9,3 +9,5 @@
 <18-2-2024> main page done.
 
 <19-2-2024> learning and getting started with mobile app design.
+
+<5-3-2024> Made navbar repsonsive.
