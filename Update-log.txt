@@ -14,4 +14,4 @@
 
 <6-3-2024> Footer wrapable.
 
-<7-3-2024> Mobile lay out added.
+<7-3-2024> Mobile lay out added and converted a frame to a group.
