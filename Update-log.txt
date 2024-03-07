@@ -13,3 +13,5 @@
 <5-3-2024> Made navbar a bit repsonsive.
 
 <6-3-2024> Footer wrapable.
+
+<7-3-2024> Mobile lay out added.
