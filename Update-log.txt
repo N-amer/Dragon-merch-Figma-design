@@ -17,3 +17,5 @@
 <7-3-2024> Mobile lay out added and converted a frame to a group.
 
 <8-3-2024> Hamburger menu animation added on mobile version and centered the MerchComponents in desktop version
+
+<10-3-2023> Menu sidebar created
