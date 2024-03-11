@@ -19,3 +19,5 @@
 <8-3-2024> Hamburger menu animation added on mobile version and centered the MerchComponents in desktop version
 
 <10-3-2023> Menu sidebar created
+
+<11-3-2023> Animation added on menu sidebar
