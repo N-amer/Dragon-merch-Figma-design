@@ -21,3 +21,5 @@
 <10-3-2023> Menu sidebar created
 
 <11-3-2023> Animation added on menu sidebar
+
+<12-3-2024> Added the power up text on mobile
