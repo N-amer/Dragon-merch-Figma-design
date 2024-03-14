@@ -24,4 +24,4 @@
 
 <12-3-2024> Added the power up text on mobile, animated and adjusted the the border-radius in menu sidebar
 
-<14-3-2024> Added mobile merch 1 and 2 content with animation.
+<14-3-2024> Added mobile merch 1, 2 and 3 components with animation.
