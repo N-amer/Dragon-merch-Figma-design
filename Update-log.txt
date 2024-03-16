@@ -27,3 +27,5 @@
 <14-3-2024> Added mobile merch 1, 2 and 3 components with animation.
 
 <15-3-2024> created a service section and added it in Desktop version.
+
+<16-3-2024> Added a better SuperSaiyan Image.
