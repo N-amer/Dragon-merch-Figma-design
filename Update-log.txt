@@ -30,4 +30,6 @@
 
 <16-3-2024> Added a better SuperSaiyan Image.
 
-<17-3-2024> about section added with out lay out and temporary image.
+<17-3-2024> About section added with out lay out and temporary image.
+
+<18-3-2024> Structure added on contact section.  
