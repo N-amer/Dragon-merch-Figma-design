@@ -16,11 +16,11 @@
 
 <7-3-2024> Mobile lay out added and converted a frame to a group.
 
-<8-3-2024> Hamburger menu animation added on mobile version and centered the MerchComponents in desktop version
+<8-3-2024> Hamburger menu animation added on mobile version and centered the MerchComponents in desktop version.
 
-<10-3-2023> Menu sidebar created
+<10-3-2023> Menu sidebar created.
 
-<11-3-2023> Animation added on menu sidebar
+<11-3-2023> Animation added on menu sidebar.
 
 <12-3-2024> Added the power up text on mobile, animated and adjusted the the border-radius in menu sidebar
 
@@ -34,4 +34,4 @@
 
 <18-3-2024> Structure added on contact section. 
 
-<19-3-2024> Example of the contact section is done. 
+<19-3-2024> Example of the contact section is done & contact section added to desktop version. 
