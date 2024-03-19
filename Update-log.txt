@@ -32,4 +32,6 @@
 
 <17-3-2024> About section added with out lay out and temporary image.
 
-<18-3-2024> Structure added on contact section.  
+<18-3-2024> Structure added on contact section. 
+
+<19-3-2024> Example of the contact section is done. 
