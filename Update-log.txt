@@ -35,3 +35,5 @@
 <18-3-2024> Structure added on contact section. 
 
 <19-3-2024> Example of the contact section is done & contact section added to desktop version. 
+
+<21-3-2024> Made the text of the about section more fitting.
