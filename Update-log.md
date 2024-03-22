@@ -93,4 +93,5 @@
   - Added more shadows on some elements to make it more appealing to watch.
 
 - **22st March 2024:**
-  - created an services example for mobile
+  - created an services example for mobile.
+  - added the services section in to the mobile version.
