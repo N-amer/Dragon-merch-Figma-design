@@ -91,3 +91,6 @@
 - **21st March 2024:**
   - Made the text of the About section more fitting.
   - Added more shadows on some elements to make it more appealing to watch.
+
+- **22st March 2024:**
+  - created an services example for mobile
