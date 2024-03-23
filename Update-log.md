@@ -89,9 +89,14 @@
   - Added contact section to the desktop version.
 
 - **21st March 2024:**
+
   - Made the text of the About section more fitting.
   - Added more shadows on some elements to make it more appealing to watch.
 
 - **22st March 2024:**
+
   - created an services example for mobile.
   - added the services section in to the mobile version.
+
+  - **23st March 2024:**
+  - created a contact example for mobile.
