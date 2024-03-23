@@ -100,3 +100,4 @@
 
   - **23st March 2024:**
   - created a contact example for mobile.
+  - added the contact section in to the mobile version.
