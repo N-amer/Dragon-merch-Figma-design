@@ -99,5 +99,10 @@
   - added the services section in to the mobile version.
 
   - **23st March 2024:**
+
   - created a contact example for mobile.
   - added the contact section in to the mobile version.
+
+    - **23st March 2024:**
+
+  - added "Our Mission" flipable card component in About us section and deleted the big text that doens't look appealing.
