@@ -111,3 +111,4 @@
 
     - Added "Our Mission" flipable card component in About us section.
     - Added "Quality" flipable card component in About us section.
+    - Added "Community" flipable card component in About us section.
