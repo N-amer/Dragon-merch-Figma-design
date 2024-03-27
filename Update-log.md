@@ -95,14 +95,18 @@
 
 - **22st March 2024:**
 
-  - created an services example for mobile.
-  - added the services section in to the mobile version.
+  - Created an services example for mobile.
+  - Added the services section in to the mobile version.
 
   - **23st March 2024:**
 
-  - created a contact example for mobile.
-  - added the contact section in to the mobile version.
+  - Created a contact example for mobile.
+  - Added the contact section in to the mobile version.
 
     - **23st March 2024:**
 
-  - added "Our Mission" flipable card component in About us section and deleted the big text that doens't look appealing.
+  - Added "Our Mission" flipable card component in About us section and deleted the big text that doens't look appealing.
+
+    - **23st March 2024:**
+
+    - Added "Our Mission" flipable card component in About us section
