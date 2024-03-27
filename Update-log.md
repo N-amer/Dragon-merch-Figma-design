@@ -109,4 +109,5 @@
 
     - **23st March 2024:**
 
-    - Added "Our Mission" flipable card component in About us section
+    - Added "Our Mission" flipable card component in About us section.
+    - Added "Quality" flipable card component in About us section.
