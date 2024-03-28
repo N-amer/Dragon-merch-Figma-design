@@ -116,3 +116,4 @@
   - **28st March 2024:**
 
   - Added mobile About Us example.
+  - Deleted the Diversity card component.
