@@ -103,12 +103,16 @@
   - Created a contact example for mobile.
   - Added the contact section in to the mobile version.
 
-    - **23st March 2024:**
+    - **25st March 2024:**
 
   - Added "Our Mission" flipable card component in About us section and deleted the big text that doens't look appealing.
 
-    - **23st March 2024:**
+    - **27st March 2024:**
 
-    - Added "Our Mission" flipable card component in About us section.
-    - Added "Quality" flipable card component in About us section.
-    - Added "Community" flipable card component in About us section.
+  - Added "Our Mission" flipable card component in About us section.
+  - Added "Quality" flipable card component in About us section.
+  - Added "Community" flipable card component in About us section.
+
+  - **28st March 2024:**
+
+  - Added mobile About Us example.
