@@ -120,3 +120,7 @@
   - Added "Our Mission" flipable card component in mobile About us section.
   - Added "Quality" flipable card component in mobile About us section.
   - Added "Community" flipable card component in mobile About us section.
+
+- **31st March 2024:**
+
+  - Started creating the sign up page example.
