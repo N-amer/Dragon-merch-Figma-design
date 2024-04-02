@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Siara Condensed', sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    position: fixed;
+    width: 100%;
+    padding: 15px;
+}
+
+nav .start a {
+    padding-left: 10px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: start;
+}
+
+nav .center ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding-right: 40px;
+    flex-direction: row;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 7px;
+    width: 0;
+    background-color: orange;
+    transition: width 0.3s ease;
+}
+
+.nav-item a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.nav-item a:hover {
+    cursor: pointer;
+}
+
+.nav-item a:focus {
+    outline: none;
+}
+
+.nav-item a:focus::after,
+.nav-item a:hover::after {
+    width: 100%;
+}
+
+.nav-item.active a::after {
+    width: 100%;
+}
+
+.nav-item img{
+    width: 200px;
+}
+
+.signup-btn {
+    display: inline-block;
+    padding: 12px 16px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s;
+    margin-right: 40px;
+    font-weight: 600;
+}
+
+.signup-btn:hover {
+    background-color: #FFE5B4;
+    color: black;
+}
+
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section:nth-child(even) {
+    background-color: #f2f2f2;
+}
