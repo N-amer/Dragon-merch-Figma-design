@@ -40,10 +40,17 @@ nav .center ul {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 7px;
-    width: 0;
+    transform: translateX(-50%);
+    height: 5px;
+    width: 100%;
     background-color: orange;
-    transition: width 0.3s ease;
+    transform-origin: bottom;
+    transition: transform 0.3s ease;
+    transform: scaleX(0);
+}
+
+.nav-item.active::after {
+    transform: scaleX(1);
 }
 
 .nav-item a {
@@ -54,6 +61,15 @@ nav .center ul {
     text-decoration: none;
     cursor: pointer;
     font-weight: 600;
+}
+
+.nav-item a:hover {
+    cursor: pointer;
+}
+
+.nav-item a:focus {
+    outline: none;
+    color: orange;
 }
 
 .nav-item a:hover {
@@ -73,7 +89,7 @@ nav .center ul {
     width: 100%;
 }
 
-.nav-item img{
+a :nth-child(1){
     width: 200px;
 }
 
@@ -90,7 +106,7 @@ nav .center ul {
 }
 
 .signup-btn:hover {
-    background-color: #FFE5B4;
+    background-color: #feda95;
     color: black;
 }
 

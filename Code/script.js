@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll("nav a");
+  const navItems = document.querySelectorAll(".nav-item");
 
   navLinks.forEach((link) => {
     link.addEventListener("click", function (event) {
@@ -9,6 +10,14 @@ document.addEventListener("DOMContentLoaded", function () {
       const targetSection = document.getElementById(targetId);
 
       targetSection.scrollIntoView({ behavior: "smooth" });
+      navItems.forEach((item) => {
+        item.addEventListener("click", function () {
+          navItems.forEach((navItem) => {
+            navItem.classList.remove("active");
+          });
+          this.classList.add("active");
+        });
+      });
     });
   });
 });
