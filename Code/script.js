@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const navLinks = document.querySelectorAll("nav a");
+  const navLinks = document.querySelectorAll("nav .nav-item a"); // Select only navigation links inside .nav-item
   const navItems = document.querySelectorAll(".nav-item");
 
   navLinks.forEach((link) => {
@@ -10,14 +10,12 @@ document.addEventListener("DOMContentLoaded", function () {
       const targetSection = document.getElementById(targetId);
 
       targetSection.scrollIntoView({ behavior: "smooth" });
+
+      // Toggle active class for navigation items
       navItems.forEach((item) => {
-        item.addEventListener("click", function () {
-          navItems.forEach((navItem) => {
-            navItem.classList.remove("active");
-          });
-          this.classList.add("active");
-        });
+        item.classList.remove("active");
       });
+      this.closest('.nav-item').classList.add('active');
     });
   });
 });
