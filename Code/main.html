@@ -5,41 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DragonMerch</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav>
-        <div class="start">
-            <a id="logo" href="#home"><img src="../Images/Logo.svg" alt=""></a>
+    <nav class="bg-black shadow fixed w-full flex items-center justify-between py-4">
+        <div class="ml-4">
+            <a href="#home"><img src="../Images/Logo.svg" alt=""></a>
         </div>
-        <div class="center">
-            <ul>
-                <li class="nav-item active"><a href="#home">HOME</a></li>
-                <li class="nav-item"><a href="#services">SERVICES</a></li>
-                <li class="nav-item"><a href="#contact">CONTACT</a></li>
-                <li class="nav-item"><a href="#about">ABOUT</a></li>
+        <div class="mr-4">
+            <ul class="flex">
+                <li class="nav-item active"><a href="#home" class="text-white px-4 py-2">HOME</a></li>
+                <li class="nav-item"><a href="#services" class="text-white px-4 py-2">SERVICES</a></li>
+                <li class="nav-item"><a href="#contact" class="text-white px-4 py-2">CONTACT</a></li>
+                <li class="nav-item"><a href="#about" class="text-white px-4 py-2">ABOUT</a></li>
                 <li class="underline"></li>
             </ul>
         </div>
-        <div class="end">
-            <a href="signUp.html" class="signup-btn">SIGN UP</a>
+        <div>
+            <a href="signUp.html" class="signup-btn bg-orange-500 text-white px-4 py-2 rounded-md mr-10">SIGN UP</a>
         </div>
     </nav>
 
-    <section id="home">
+    <section id="home" class="h-screen bg-black flex items-center" style="height: 550px;">
+        <div id="home-content" class="flex flex-row justify-between w-full mx-auto px-8">
+            <div id="home-text" class="flex flex-col justify-center ml-40">
+                <h1 class="font-bold text-white text-5xl mb-8" style="max-width: 800px;">
+                    POWER UP YOUR COLLECTION
+                </h1>
+                <div class="flex flex-row">
+                    <h1 class="font-bold text-white text-5xl mr-2">WITH</h1>
+                    <h1 class="text-yellow-500 font-bold text-5xl mr-2">DRAGON BALL</h1>
+                    <h1 class="font-bold text-white text-5xl">!</h1>
+                </div>
+            </div>
+            <div id="home-image" class="text-center p-5">
+                <img src="../Images/Home/Shenron.svg" alt="" class="w-96">
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="services" class="h-screen bg-white">
 
     </section>
 
-    <section id="services">
+    <section id="contact" class="h-screen bg-gray-200">
 
     </section>
 
-    <section id="contact">
-
-    </section>
-
-    <section id="about">
+    <section id="about" class="h-screen bg-white">
 
     </section>
 

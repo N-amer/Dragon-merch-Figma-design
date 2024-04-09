@@ -1,4 +1,6 @@
 body {
+    display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     font-family: 'Siara Condensed', sans-serif;
@@ -130,10 +132,15 @@ section:nth-child(even) {
     background-color: black;
     height: 500px;
 }
-.signUp-container{
+.signUp-container{ 
+    inline-size: auto;
     position: absolute;
     display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0 200px 0;
+    text-align: center;
     justify-content: center;
+    flex-direction: column;
     background-color: #ffff;
     border-radius: 20px;
     height: 850px;
@@ -141,4 +148,14 @@ section:nth-child(even) {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+input{
+    padding: 13px 10px 13px 20px;
+    margin: 0px 0 20px;
+    border-radius: 7px;
+}
+#inputfields{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 100px 0 100px;
 }
