@@ -1,0 +1,29 @@
+ /* Additional styles for the custom sidebar menu */
+ .sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.sidebar.active {
+    transform: translateX(0);
+}
+
+/* Additional styles for the close menu button */
+#close-menu-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+@media (min-width: 768px) {
+    .hidden-md {
+        display: none;
+    }
+
+    .md\:flex {
+        display: flex;
+    }
+}
+
+.translate-x-full {
+    transform: translateX(100%);
+}

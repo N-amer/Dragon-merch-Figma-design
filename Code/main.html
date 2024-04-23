@@ -8,112 +8,121 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body class="bg-gray-100">
-
-    <!-- Navigation -->
-    <nav class="bg-black shadow fixed w-full flex items-center justify-between py-4 z-50">
-        <div class="ml-4">
-            <a href="#upperSection"><img src="../Images/Logo.svg" alt="DragonMerch Logo"></a>
+<body>
+    <nav class="bg-black shadow fixed w-full flex items-center justify-between py-4">
+        <div class="mx-10">
+            <a href="#upperSection"><img src="../Images/Logo.svg" alt=""></a>
         </div>
-        <!-- Burger Menu for Tablet -->
-        <div class="block lg:hidden mr-4">
-            <button id="burger-menu" class="text-white focus:outline-none">
-                <svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd"
-                        d="M2.5 5a.5.5 0 0 1 .5-.5h14a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h14a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h14a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        <div class="flex-grow flex justify-center">
+            <ul class="flex">
+                <li class="nav-item active"><a href="#upperSection" class="text-white px-4 py-2">HOME</a></li>
+                <li class="nav-item"><a href="#services" class="text-white px-4 py-2">SERVICES</a></li>
+                <li class="nav-item"><a href="#contact" class="text-white px-4 py-2">CONTACT</a></li>
+                <li class="nav-item"><a href="#about" class="text-white px-4 py-2">ABOUT</a></li>
+            </ul>
+        </div>
+        <div class="md:hidden ml-auto mr-4">
+            <button id="burger-menu" class="focus:outline-none">
+                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
             </button>
         </div>
-        <!-- Sign Up Button (Hidden on Tablet and Mobile) -->
-        <div class="hidden lg:block">
-            <a href="signUp.html" class="signup-btn bg-orange-500 text-white px-4 py-2 rounded-md mr-10">SIGN UP</a>
-        </div>
-        <!-- Side Menu -->
-        <div id="side-menu"
-            class="lg:hidden fixed top-0 left-0 h-screen w-2/3 bg-orange-500 text-white transition-transform transform -translate-x-full z-50">
-            <ul class="pt-20 text-center">
-                <li class="py-2"><a href="#upperSection" class="block">HOME</a></li>
-                <li class="py-2"><a href="#services" class="block">SERVICES</a></li>
-                <li class="py-2"><a href="#contact" class="block">CONTACT</a></li>
-                <li class="py-2"><a href="#about" class="block">ABOUT</a></li>
-                <!-- Sign Up Button in Side Menu -->
-                <li class="py-2"><a href="signUp.html"
-                        class="signup-btn bg-white text-orange-500 px-4 py-2 rounded-md block">SIGN UP</a></li>
-            </ul>
+        <div class="md:flex items-center hidden">
+            <a href="signUp.html" class="text-white px-4 py-2 mx-10">SIGN UP</a>
         </div>
     </nav>
+    
+    
+    
 
-    <!-- Upper Section -->
-    <section id="upperSection" class="h-screen bg-black flex items-center w-full">
-        <div id="home-content" class="flex flex-col lg:flex-row items-center w-full mx-auto px-8">
-            <div id="home-text" class="lg:w-1/2 text-center lg:text-left mb-10 lg:mb-0">
-                <h1 class="font-bold text-white text-4xl lg:text-5xl mb-4 lg:mb-8">
-                    POWER UP YOUR COLLECTION WITH <span class="text-yellow-500">DRAGONBALL</span>!
-                </h1>
-                <p class="text-white text-lg lg:text-xl">Welcome to DragonMerch, your ultimate destination for Dragon Ball merchandise.</p>
-            </div>
-            <div id="home-image" class="lg:w-1/2 p-5">
-                <img src="../Images/Home/Shenron.svg" alt="Shenron Image" class="mx-auto lg:ml-0 w-72 lg:w-full">
-            </div>
+    <!-- Side Menu for Mobile -->
+    <div id="side-menu" class="fixed inset-0 z-50 bg-black bg-opacity-50 hidden md:hidden">
+        <div class="flex flex-col items-end h-full pt-20">
+            <a href="#upperSection" class="text-white py-2 px-4">HOME</a>
+            <a href="#services" class="text-white py-2 px-4">SERVICES</a>
+            <a href="#contact" class="text-white py-2 px-4">CONTACT</a>
+            <a href="#about" class="text-white py-2 px-4">ABOUT</a>
+            <a href="signUp.html" class="text-white py-2 px-4">SIGN UP</a>
+        </div>
+    </div>
+
+    <section id="upperSection" class="bg-black flex flex-col md:flex-row items-center justify-between max-h-550 pt-10 pr-20 pl-40">
+        <div id="home-text" class="text-white text-center md:text-left text-5xl mb-8 md:mb-0 md:w-1/2 px-8">
+            <h1 class="font-bold flex flex-col no-wrap">
+                POWER UP YOUR COLLECTION <span>WITH <span class="text-yellow-500">DRAGONBALL</span>!</span>
+            </h1>
+        </div>
+        <div id="home-image" class="flex justify-end text-center p-5 md:w-1/2">
+            <img src="../Images/Home/Shenron.svg" alt="" class="w-96 mx-auto md:mx-0">
         </div>
     </section>
+    
 
-    <!-- Home Section -->
     <section id="home" class="h-screen bg-white">
         <!-- Content for HOME section -->
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="bg-white relative z-10">
+    <section id="services" class="h-auto bg-white relative">
         <div class="bg-white dark:bg-zinc-800 relative">
             <div class="absolute top-0 left-0 h-1 w-20 bg-yellow-300 dark:bg-yellow-700"></div>
             <div class="container mx-auto px-6 py-10">
-                <h2 class="text-3xl lg:text-4xl font-bold text-zinc-800 dark:text-white text-center mb-6 lg:mb-10">DragonMerch: Your Ultimate
+                <h2 class="text-3xl font-bold text-zinc-800 dark:text-white text-center">DragonMerch: Your Ultimate
                     Destination for Dragon Ball Merchandise</h2>
-                <p class="text-lg lg:text-xl text-zinc-600 dark:text-zinc-400 text-center mb-6 lg:mb-10">
+                <p class="mt-4 text-zinc-600 dark:text-zinc-400 text-center">
                     At DragonMerch, we're passionate about bringing the vibrant world of Dragon Ball to life through our
                     carefully curated selection of merchandise. Our collection features a fusion of style, quality, and
                     fandom dedication, ensuring that every fan can find something they love. Explore our range of Dragon
                     Ball-inspired apparel, including:
                 </p>
-                <ul class="list-disc pl-5 mb-6 lg:mb-10">
-                    <li class="text-lg lg:text-xl text-zinc-700 dark:text-zinc-300">Exclusive Graphic T-shirts: Show your love for Dragon
+                <ul class="list-disc pl-5 mt-6 space-y-2">
+                    <li class="text-zinc-700 dark:text-zinc-300">Exclusive Graphic T-shirts: Show your love for Dragon
                         Ball with vibrant designs.</li>
-                    <li class="text-lg lg:text-xl text-zinc-700 dark:text-zinc-300">Limited Edition Hoodies: Stay cozy and stylish with our
+                    <li class="text-zinc-700 dark:text-zinc-300">Limited Edition Hoodies: Stay cozy and stylish with our
                         exclusive hoodies.</li>
-                    <li class="text-lg lg:text-xl text-zinc-700 dark:text-zinc-300">Unique Collectibles: From detailed figurines to
+                    <li class="text-zinc-700 dark:text-zinc-300">Unique Collectibles: From detailed figurines to
                         accessories, find exclusive Dragon Ball collectibles here.</li>
                 </ul>
-                <h3 class="text-2xl lg:text-3xl font-bold text-zinc-800 dark:text-white mb-6 lg:mb-10">Why DragonMerch?</h3>
-                <ul class="list-disc pl-5 mb-6 lg:mb-10">
-                    <li class="text-lg lg:text-xl text-zinc-700 dark:text-zinc-300">Premium Quality: Our products meet the highest
+                <h3 class="text-2xl font-bold text-zinc-800 dark:text-white mt-10">Why DragonMerch?</h3>
+                <ul class="list-disc pl-5 mt-4 space-y-2">
+                    <li class="text-zinc-700 dark:text-zinc-300">Premium Quality: Our products meet the highest
                         standards.</li>
-                    <li class="text-lg lg:text-xl text-zinc-700 dark:text-zinc-300">Officially Licensed: Authentic designs straight from
+                    <li class="text-zinc-700 dark:text-zinc-300">Officially Licensed: Authentic designs straight from
                         the Dragon Ball series.</li>
-                    <li class="text-lg lg:text-xl text-zinc-700 dark:text-zinc-300">Customer Satisfaction: Secure payment, fast shipping,
+                    <li class="text-zinc-700 dark:text-zinc-300">Customer Satisfaction: Secure payment, fast shipping,
                         and dedicated customer service.</li>
                 </ul>
-                <p class="text-lg lg:text-xl font-bold text-zinc-800 dark:text-white text-center mb-6 lg:mb-10">
+                <p class="mt-6 text-lg font-bold text-zinc-800 dark:text-white text-center">
                     Unleash the Super Saiyan within you with DragonMerch!
                 </p>
-                <img src="../Images/Services/SuperSaiyan.png" alt="Dragon Ball Merchandise" class="mx-auto w-72 lg:w-full">
+                <img src="../Images/Services/SuperSaiyan.png" alt="Dragon Ball Merchandise" class="w-96 mx-auto">
                 <div class="absolute bottom-0 left-0 h-20 w-1 bg-orange-300 dark:bg-orange-700"></div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="h-screen bg-gray-200 relative z-0">
         <div class="container mx-auto px-6 py-10">
-            <h1 class="text-3xl lg:text-4xl font-bold text-black text-center mb-6 lg:mb-10">CONTACT</h1>
+            <h1 class="text-3xl font-bold text-black text-center">CONTACT</h1>
             <!-- Additional content for CONTACT section -->
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="h-screen bg-white relative z-0">
         <div class="container mx-auto px-6 py-10">
-            <h1 class="text-3xl lg:text-4xl font-bold text-black text-center mb-6 lg:mb-10">ABOUT</h1>
+            <h1 class="text-3xl font-bold text-black text-center">ABOUT</h1>
             <!-- Additional content for ABOUT section -->
         </div>
     </section>
+
+    <footer class="h-750 bg-black w-full py-10">
+        <div class="flex flex-row justify-center ">
+            <h4 class="text-white">test</h4>
+        </div>
+    
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

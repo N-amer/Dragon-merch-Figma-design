@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const burgerMenu = document.getElementById('burger-menu');
   const sideMenu = document.getElementById('side-menu');
 
-burgerMenu.addEventListener('click', () => {
-  sideMenu.classList.toggle('-translate-x-full')
-});
+  burgerMenu.addEventListener('click', () => {
+    sideMenu.classList.toggle('translate-x-0');
+  });
 
   navLinks.forEach((link) => {
     link.addEventListener("click", function (event) {
@@ -17,7 +17,6 @@ burgerMenu.addEventListener('click', () => {
 
       targetSection.scrollIntoView({ behavior: "smooth" });
 
-      // Toggle active class for navigation items
       navItems.forEach((item) => {
         item.classList.remove("active");
       });
