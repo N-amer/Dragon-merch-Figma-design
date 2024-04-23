@@ -10,17 +10,10 @@
 
 <body>
     <nav class="bg-black shadow fixed w-full flex items-center justify-between py-4">
-        <div class="mx-10">
+        <div class="mx-4 md:mx-10">
             <a href="#upperSection"><img src="../Images/Logo.svg" alt=""></a>
         </div>
-        <div class="flex-grow flex justify-center font-medium">
-            <ul class="flex">
-                <li class="nav-item active"><a href="#upperSection" class="text-white px-4 py-2">HOME</a></li>
-                <li class="nav-item"><a href="#services" class="text-white px-4 py-2">SERVICES</a></li>
-                <li class="nav-item"><a href="#contact" class="text-white px-4 py-2">CONTACT</a></li>
-                <li class="nav-item"><a href="#about" class="text-white px-4 py-2">ABOUT</a></li>
-            </ul>
-        </div>
+        <!-- Toggle Button for Mobile -->
         <div class="md:hidden ml-auto mr-4">
             <button id="burger-menu" class="focus:outline-none">
                 <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -28,6 +21,22 @@
                 </svg>
             </button>
         </div>
+        <!-- Menu Items -->
+        <div id="navbar-menu" class="md:flex items-center hidden font-medium">
+            <ul class="flex flex-col md:flex-row md:space-x-4 pr-20">
+                <li class="nav-item active"><a href="#upperSection" class="text-white px-2 py-1 md:px-4 md:py-2">HOME</a></li>
+                <li class="nav-item"><a href="#services" class="text-white px-2 py-1 md:px-4 md:py-2">SERVICES</a></li>
+                <li class="nav-item"><a href="#contact" class="text-white px-2 py-1 md:px-4 md:py-2">CONTACT</a></li>
+                <li class="nav-item"><a href="#about" class="text-white px-2 py-1 md:px-4 md:py-2">ABOUT</a></li>
+            </ul>
+        </div>
+        <!-- Sign Up Button -->
+        <div class=" md:hidden lg:block flex items-center px-20">
+            <a href="signUp.html" class="text-white font-medium px-2 py-1 md:px-4 md:py-2 bg-yellow-500 rounded-md transition duration-300 hover:bg-yellow-300 hover:text-black">SIGN UP</a>
+        </div>
+    </nav>
+    
+    
 
             <a href="signUp.html" class="font-medium text-white px-4 py-2 mx-10 bg-yellow-500 rounded-md transition duration-300 hover:bg-yellow-400 hover:text-black">SIGN UP</a>
                
@@ -48,14 +57,14 @@
         </div>
     </div>
 
-    <section id="upperSection" class="bg-black flex flex-col md:flex-row items-center justify-between max-h-550 pt-10 pr-20 pl-40">
-        <div id="home-text" class="text-white text-center md:text-left text-5xl mb-8 md:mb-0 md:w-1/2 px-8">
-            <h1 class="font-bold flex flex-col no-wrap">
+    <section id="upperSection" class="bg-black flex no-wrap flex-col md:flex-row items-center justify-between max-h-550 pt-10 pr-20 pl-40">
+        <div id="home-text" class="text-white text-left text-5xl mb-8 px-8">
+            <h1 class="font-bold flex flex-col">
                 POWER UP YOUR COLLECTION <span>WITH <span class="text-yellow-500">DRAGONBALL</span>!</span>
             </h1>
         </div>
         <div id="home-image" class="flex justify-end text-center p-5 md:w-1/2">
-            <img src="../Images/Home/Shenron.svg" alt="" class="w-96 mx-auto md:mx-0">
+            <img src="../Images/Home/Shenron.svg" alt="" class="w-full md:w-96">
         </div>
     </section>
     
