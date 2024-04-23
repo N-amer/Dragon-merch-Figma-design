@@ -1,6 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const navLinks = document.querySelectorAll("nav .nav-item a"); // Select only navigation links inside .nav-item
+  const navLinks = document.querySelectorAll("nav .nav-item a");
   const navItems = document.querySelectorAll(".nav-item");
+  const burgerMenu = document.getElementById('burger-menu');
+  const sideMenu = document.getElementById('side-menu');
+
+burgerMenu.addEventListener('click', () => {
+  sideMenu.classList.toggle('-translate-x-full')
+});
 
   navLinks.forEach((link) => {
     link.addEventListener("click", function (event) {

@@ -8,92 +8,112 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body>
-    <nav class="bg-black shadow fixed w-full flex items-center justify-between py-4">
+<body class="bg-gray-100">
+
+    <!-- Navigation -->
+    <nav class="bg-black shadow fixed w-full flex items-center justify-between py-4 z-50">
         <div class="ml-4">
-            <a href="#upperSection"><img src="../Images/Logo.svg" alt=""></a>
+            <a href="#upperSection"><img src="../Images/Logo.svg" alt="DragonMerch Logo"></a>
         </div>
-        <div class="mr-4">
-            <ul class="flex">
-                <li class="nav-item active"><a href="#home" class="text-white px-4 py-2">HOME</a></li>
-                <li class="nav-item"><a href="#services" class="text-white px-4 py-2">SERVICES</a></li>
-                <li class="nav-item"><a href="#contact" class="text-white px-4 py-2">CONTACT</a></li>
-                <li class="nav-item"><a href="#about" class="text-white px-4 py-2">ABOUT</a></li>
-                <li class="underline"></li>
-            </ul>
+        <!-- Burger Menu for Tablet -->
+        <div class="block lg:hidden mr-4">
+            <button id="burger-menu" class="text-white focus:outline-none">
+                <svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                        d="M2.5 5a.5.5 0 0 1 .5-.5h14a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h14a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h14a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
         </div>
-        <div>
+        <!-- Sign Up Button (Hidden on Tablet and Mobile) -->
+        <div class="hidden lg:block">
             <a href="signUp.html" class="signup-btn bg-orange-500 text-white px-4 py-2 rounded-md mr-10">SIGN UP</a>
+        </div>
+        <!-- Side Menu -->
+        <div id="side-menu"
+            class="lg:hidden fixed top-0 left-0 h-screen w-2/3 bg-orange-500 text-white transition-transform transform -translate-x-full z-50">
+            <ul class="pt-20 text-center">
+                <li class="py-2"><a href="#upperSection" class="block">HOME</a></li>
+                <li class="py-2"><a href="#services" class="block">SERVICES</a></li>
+                <li class="py-2"><a href="#contact" class="block">CONTACT</a></li>
+                <li class="py-2"><a href="#about" class="block">ABOUT</a></li>
+                <!-- Sign Up Button in Side Menu -->
+                <li class="py-2"><a href="signUp.html"
+                        class="signup-btn bg-white text-orange-500 px-4 py-2 rounded-md block">SIGN UP</a></li>
+            </ul>
         </div>
     </nav>
 
-    <section id="upperSection" class="h-screen bg-black flex items-center w-full h-auto" style="height: 550px;">
-        <div id="home-content" class="flex flex-row justify-between w-full mx-auto px-8">
-            <div id="home-text" class="flex flex-col justify-center ml-40">
-                <h1 class="font-bold text-white text-5xl mb-8 w-full h-auto" style="max-width: 800px;">
+    <!-- Upper Section -->
+    <section id="upperSection" class="h-screen bg-black flex items-center w-full">
+        <div id="home-content" class="flex flex-col lg:flex-row items-center w-full mx-auto px-8">
+            <div id="home-text" class="lg:w-1/2 text-center lg:text-left mb-10 lg:mb-0">
+                <h1 class="font-bold text-white text-4xl lg:text-5xl mb-4 lg:mb-8">
                     POWER UP YOUR COLLECTION WITH <span class="text-yellow-500">DRAGONBALL</span>!
                 </h1>
-
+                <p class="text-white text-lg lg:text-xl">Welcome to DragonMerch, your ultimate destination for Dragon Ball merchandise.</p>
             </div>
-            <div id="home-image" class="text-center p-5">
-                <img src="../Images/Home/Shenron.svg" alt="" class="w-96">
+            <div id="home-image" class="lg:w-1/2 p-5">
+                <img src="../Images/Home/Shenron.svg" alt="Shenron Image" class="mx-auto lg:ml-0 w-72 lg:w-full">
             </div>
         </div>
     </section>
 
+    <!-- Home Section -->
     <section id="home" class="h-screen bg-white">
-
-
+        <!-- Content for HOME section -->
     </section>
 
-    <section id="services" class="h-screen bg-white">
+    <!-- Services Section -->
+    <section id="services" class="bg-white relative z-10">
         <div class="bg-white dark:bg-zinc-800 relative">
             <div class="absolute top-0 left-0 h-1 w-20 bg-yellow-300 dark:bg-yellow-700"></div>
             <div class="container mx-auto px-6 py-10">
-                <h2 class="text-3xl font-bold text-zinc-800 dark:text-white text-center">DragonMerch: Your Ultimate
+                <h2 class="text-3xl lg:text-4xl font-bold text-zinc-800 dark:text-white text-center mb-6 lg:mb-10">DragonMerch: Your Ultimate
                     Destination for Dragon Ball Merchandise</h2>
-                <p class="mt-4 text-zinc-600 dark:text-zinc-400 text-center">
+                <p class="text-lg lg:text-xl text-zinc-600 dark:text-zinc-400 text-center mb-6 lg:mb-10">
                     At DragonMerch, we're passionate about bringing the vibrant world of Dragon Ball to life through our
                     carefully curated selection of merchandise. Our collection features a fusion of style, quality, and
                     fandom dedication, ensuring that every fan can find something they love. Explore our range of Dragon
                     Ball-inspired apparel, including:
                 </p>
-                <ul class="list-disc pl-5 mt-6 space-y-2">
-                    <li class="text-zinc-700 dark:text-zinc-300">Exclusive Graphic T-shirts: Show your love for Dragon
+                <ul class="list-disc pl-5 mb-6 lg:mb-10">
+                    <li class="text-lg lg:text-xl text-zinc-700 dark:text-zinc-300">Exclusive Graphic T-shirts: Show your love for Dragon
                         Ball with vibrant designs.</li>
-                    <li class="text-zinc-700 dark:text-zinc-300">Limited Edition Hoodies: Stay cozy and stylish with our
+                    <li class="text-lg lg:text-xl text-zinc-700 dark:text-zinc-300">Limited Edition Hoodies: Stay cozy and stylish with our
                         exclusive hoodies.</li>
-                    <li class="text-zinc-700 dark:text-zinc-300">Unique Collectibles: From detailed figurines to
+                    <li class="text-lg lg:text-xl text-zinc-700 dark:text-zinc-300">Unique Collectibles: From detailed figurines to
                         accessories, find exclusive Dragon Ball collectibles here.</li>
                 </ul>
-                <h3 class="text-2xl font-bold text-zinc-800 dark:text-white mt-10">Why DragonMerch?</h3>
-                <ul class="list-disc pl-5 mt-4 space-y-2">
-                    <li class="text-zinc-700 dark:text-zinc-300">Premium Quality: Our products meet the highest
+                <h3 class="text-2xl lg:text-3xl font-bold text-zinc-800 dark:text-white mb-6 lg:mb-10">Why DragonMerch?</h3>
+                <ul class="list-disc pl-5 mb-6 lg:mb-10">
+                    <li class="text-lg lg:text-xl text-zinc-700 dark:text-zinc-300">Premium Quality: Our products meet the highest
                         standards.</li>
-                    <li class="text-zinc-700 dark:text-zinc-300">Officially Licensed: Authentic designs straight from
+                    <li class="text-lg lg:text-xl text-zinc-700 dark:text-zinc-300">Officially Licensed: Authentic designs straight from
                         the Dragon Ball series.</li>
-                    <li class="text-zinc-700 dark:text-zinc-300">Customer Satisfaction: Secure payment, fast shipping,
+                    <li class="text-lg lg:text-xl text-zinc-700 dark:text-zinc-300">Customer Satisfaction: Secure payment, fast shipping,
                         and dedicated customer service.</li>
                 </ul>
-                <p class="mt-6 text-lg font-bold text-zinc-800 dark:text-white text-center">
+                <p class="text-lg lg:text-xl font-bold text-zinc-800 dark:text-white text-center mb-6 lg:mb-10">
                     Unleash the Super Saiyan within you with DragonMerch!
                 </p>
-                <img src="../Images/Services/SuperSaiyan.png" alt="Dragon Ball Merchandise"
-                    class="">
+                <img src="../Images/Services/SuperSaiyan.png" alt="Dragon Ball Merchandise" class="mx-auto w-72 lg:w-full">
                 <div class="absolute bottom-0 left-0 h-20 w-1 bg-orange-300 dark:bg-orange-700"></div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="h-screen bg-gray-200">
-
+    <!-- Contact Section -->
+    <section id="contact" class="h-screen bg-gray-200 relative z-0">
+        <div class="container mx-auto px-6 py-10">
+            <h1 class="text-3xl lg:text-4xl font-bold text-black text-center mb-6 lg:mb-10">CONTACT</h1>
+            <!-- Additional content for CONTACT section -->
+        </div>
     </section>
 
-    <section id="about" class="h-screen bg-white">
-
+    <!-- About Section -->
+    <section id="about" class="h-screen bg-white relative z-0">
+        <div class="container mx-auto px-6 py-10">
+            <h1 class="text-3xl lg:text-4xl font-bold text-black text-center mb-6 lg:mb-10">ABOUT</h1>
+            <!-- Additional content for ABOUT section -->
+        </div>
     </section>
-
-    <script src="script.js"></script>
-</body>
-
-</html>
