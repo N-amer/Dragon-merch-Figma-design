@@ -10,54 +10,78 @@
 
 <body>
     <nav class="bg-black shadow fixed w-full flex items-center justify-between py-4">
-        <div class="mx-4 md:mx-10">
+        <div class="px-4 md:px-10">
             <a href="#upperSection"><img src="../Images/Logo.svg" alt=""></a>
         </div>
         <!-- Toggle Button for Mobile -->
-        <div class="md:hidden ml-auto mr-4">
-            <button id="burger-menu" class="focus:outline-none">
-                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        <div class="sm:block lg:hidden ml-auto mr-4">
+            <button id="burger-menu-closed" class="focus:outline-none">
+                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
                 </svg>
             </button>
         </div>
         <!-- Menu Items -->
-        <div id="navbar-menu" class="md:flex items-center hidden font-medium">
-            <ul class="flex flex-col md:flex-row md:space-x-4 pr-20">
-                <li class="nav-item active"><a href="#upperSection" class="text-white px-2 py-1 md:px-4 md:py-2">HOME</a></li>
-                <li class="nav-item"><a href="#services" class="text-white px-2 py-1 md:px-4 md:py-2">SERVICES</a></li>
-                <li class="nav-item"><a href="#contact" class="text-white px-2 py-1 md:px-4 md:py-2">CONTACT</a></li>
-                <li class="nav-item"><a href="#about" class="text-white px-2 py-1 md:px-4 md:py-2">ABOUT</a></li>
+        <div id="navbar-menu" class="font-medium text-center hidden lg:block ">
+            <ul class=" flex flex-row text-white md:space-x-4 pr-20">
+                <li class="nav-item active"><a href="#upperSection"
+                        class=" hover:text-yellow-500 transition duration-200 py-1 md:px-4 md:py-2">HOME</a></li>
+                <li class="nav-item"><a href="#services"
+                        class=" hover:text-yellow-500 transition duration-200 px-2 py-1 md:px-4 md:py-2">SERVICES</a>
+                </li>
+                <li class="nav-item"><a href="#contact"
+                        class=" hover:text-yellow-500 transition duration-200 px-2 py-1 md:px-4 md:py-2">CONTACT</a>
+                </li>
+                <li class="nav-item"><a href="#about"
+                        class=" hover:text-yellow-500 transition duration-200 px-2 py-1 md:px-4 md:py-2">ABOUT</a></li>
             </ul>
         </div>
         <!-- Sign Up Button -->
-        <div class=" md:hidden lg:block flex items-center px-20">
-            <a href="signUp.html" class="text-white font-medium px-2 py-1 md:px-4 md:py-2 bg-yellow-500 rounded-md transition duration-300 hover:bg-yellow-300 hover:text-black">SIGN UP</a>
+        <div class="flex items-center px-20 flex-row hidden lg:block ">
+            <a href="signUp.html"
+                class="text-white font-medium px-4 py-3 bg-yellow-500 rounded-md transition duration-300 hover:bg-yellow-300 hover:text-black">SIGN
+                UP</a>
         </div>
     </nav>
-    
-    
 
-            <a href="signUp.html" class="font-medium text-white px-4 py-2 mx-10 bg-yellow-500 rounded-md transition duration-300 hover:bg-yellow-400 hover:text-black">SIGN UP</a>
-               
-        
-    </nav>
-    
-    
-    
 
     <!-- Side Menu for Mobile -->
-    <div id="side-menu" class="fixed inset-0 z-50 bg-black bg-opacity-50 hidden md:hidden">
-        <div class="flex flex-col items-end h-full pt-20">
-            <a href="#upperSection" class="text-white py-2 px-4">HOME</a>
-            <a href="#services" class="text-white py-2 px-4">SERVICES</a>
-            <a href="#contact" class="text-white py-2 px-4">CONTACT</a>
-            <a href="#about" class="text-white py-2 px-4">ABOUT</a>
-            <a href="signUp.html" class="text-white py-2 px-4">SIGN UP</a>
+    <div id="side-menu" class="fixed inset-0 z-50 bg-yellow-500 pt-8 pr-10 w-5/12 right-0 left-auto">
+        <div class="ml-auto mr-4 flex justify-end">
+            <button id="burger-menu-opened" class="focus:outline-none">
+                <svg class="w-6 h-6 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+            </button>
+        </div>
+        <div class="flex flex-col items-center h-full pt-10 font-bold pl-6">
+            <div class="flex flex-row items-center justify-start w-full px-4 py-3 mb-3">
+                <img src="../Images/Icons/Mobile-Icons/Home.svg" alt="" class="w-6 h-6 mr-6">
+                <a href="#upperSection" class="text-black hover:text-black transition duration-300 ">HOME</a>
+            </div>
+            <div class="flex flex-row items-center justify-start w-full px-4 pb-3 mb-3">
+                <img src="../Images/Icons/Mobile-Icons/Services.svg" alt="" class="w-6 h-6 mr-2">
+                <a href="#services" class="text-black hover:text-black transition duration-300 py-2 px-4">SERVICES</a>
+            </div>
+            <div class="flex flex-row items-center justify-start w-full px-4 pb-3 mb-3">
+                <img src="../Images/Icons/Mobile-Icons/Contact.svg" alt="" class="w-6 h-6 mr-2">
+                <a href="#contact" class="text-black hover:text-black transition duration-300 py-2 px-4">CONTACT</a>
+            </div>
+            <div class="flex flex-row items-center justify-start w-full px-4 pb-3 mb-3">
+                <img src="../Images/Icons/Mobile-Icons/About.svg" alt="" class="w-6 h-6 mr-2">
+                <a href="#about" class="text-black hover:text-black transition duration-300 py-2 px-4">ABOUT</a>
+            </div>
+            <a href="signUp.html" class="shadow-md text-white font-medium px-3 py-4 my-2 bg-blue-500 rounded-md transition duration-300 hover:bg-blue-400 hover:text-black">SIGN UP</a>
         </div>
     </div>
+    
+    
 
-    <section id="upperSection" class="bg-black flex no-wrap flex-col md:flex-row items-center justify-between max-h-550 pt-10 pr-20 pl-40">
+
+    <section id="upperSection"
+        class="bg-black flex no-wrap flex-col md:flex-row items-center justify-between max-h-550 pt-10 pr-20 pl-40">
         <div id="home-text" class="text-white text-left text-5xl mb-8 px-8">
             <h1 class="font-bold flex flex-col">
                 POWER UP YOUR COLLECTION <span>WITH <span class="text-yellow-500">DRAGONBALL</span>!</span>
@@ -67,7 +91,7 @@
             <img src="../Images/Home/Shenron.svg" alt="" class="w-full md:w-96">
         </div>
     </section>
-    
+
 
     <section id="home" class="h-screen bg-white">
         <!-- Content for HOME section -->
@@ -129,7 +153,7 @@
         <div class="flex flex-row justify-center ">
             <h4 class="text-white">test</h4>
         </div>
-    
+
     </footer>
 
     <script src="script.js"></script>
