@@ -10,11 +10,11 @@
 
 <body>
     <nav class="bg-black shadow fixed w-full flex items-center justify-between py-4">
-        <div class="px-4 md:px-10">
+        <div class="px-4 md:px-10 md:pr-10">
             <a href="#upperSection"><img src="../Images/Logo.svg" alt=""></a>
         </div>
         <!-- Toggle Button for Mobile -->
-        <div class="sm:block lg:hidden ml-auto mr-10">
+        <div class="sm:block lg:hidden ml-auto mr-6">
             <button id="burger-menu-closed" class="focus:outline-none">
                 <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
@@ -39,7 +39,7 @@
             </ul>
         </div>
         <!-- Sign Up Button -->
-        <div class="flex items-center px-20 flex-row hidden lg:block ">
+        <div class="flex items-center px-20 hidden lg:block whitespace-nowrap">
             <a href="signUp.html"
                 class="text-white font-medium px-4 py-3 bg-yellow-500 rounded-md transition duration-300 hover:bg-yellow-300 hover:text-black">SIGN
                 UP</a>
@@ -79,31 +79,32 @@
     
     
 
-
-    <section id="upperSection"
-        class="bg-black flex no-wrap flex-col md:flex-row items-center justify-between max-h-550 pt-10 pr-20 pl-40">
-        <div id="home-text" class="text-white text-left text-5xl mb-8 px-8">
-            <h1 class="font-bold flex flex-col">
+    <section id="upperSection" class="bg-black flex flex-col sm:flex-row items-center justify-between max-h-550 pt-40 pr-20 pl-40">
+        <div id="home-text" class="w-full sm:w-1/2 text-white text-left text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-8 px-8">
+            <h1 class="font-bold leading-tight">
                 POWER UP YOUR COLLECTION <span>WITH <span class="text-yellow-500">DRAGONBALL</span>!</span>
             </h1>
         </div>
-        <div id="home-image" class="flex justify-end text-center p-5 md:w-1/2">
-            <img src="../Images/Home/Shenron.svg" alt="" class="w-full md:w-96">
+        <div id="home-image" class="sm:flex sm:justify-end items-center p-5 md:w-1/2">
+            <img src="../Images/Home/Shenron.svg" alt="" class="w-full max-w-md">
         </div>
     </section>
+    
+    
+    
 
 
     <section id="home" class="h-screen bg-white">
         <!-- Content for HOME section -->
     </section>
 
-    <section id="services" class="h-auto bg-white relative">
+    <section id="services" class="h-auto bg-white relative px-20">
         <div class="bg-white dark:bg-zinc-800 relative">
             <div class="absolute top-0 left-0 h-1 w-20 bg-yellow-300 dark:bg-yellow-700"></div>
             <div class="container mx-auto px-6 py-10">
-                <h2 class="text-3xl font-bold text-zinc-800 dark:text-white text-center">DragonMerch: Your Ultimate
+                <h2 class="text-3xl font-bold text-zinc-800 dark:text-white text-start">DragonMerch: Your Ultimate
                     Destination for Dragon Ball Merchandise</h2>
-                <p class="mt-4 text-zinc-600 dark:text-zinc-400 text-center">
+                <p class="mt-4 text-zinc-600 dark:text-zinc-400 text-start">
                     At DragonMerch, we're passionate about bringing the vibrant world of Dragon Ball to life through our
                     carefully curated selection of merchandise. Our collection features a fusion of style, quality, and
                     fandom dedication, ensuring that every fan can find something they love. Explore our range of Dragon
