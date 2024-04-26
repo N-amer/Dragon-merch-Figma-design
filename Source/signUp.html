@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-yellow-500 m-0 p-0">
+    <div class="py-10">
+    <nav class="bg-black shadow fixed w-full top-0 z-50 flex items-center justify-between py-4">
+        <div class="px-4 md:px-10 md:pr-10">
+            <a href="main.html"><img src="../Images/Logo.svg" alt=""></a>
+        </div>
+        <!-- Toggle Button for Mobile -->
+        <div class="sm:block lg:hidden ml-auto mr-6">
+            <button id="burger-menu-closed" class="focus:outline-none">
+                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <!-- Menu Items -->
+        <div id="navbar-menu" class="font-medium text-center hidden lg:block ">
+            <ul class=" flex flex-row text-white md:space-x-4 pr-20">
+                <li class="nav-item active"><a href="#upperSection"
+                        class=" hover:text-yellow-500 transition duration-200 py-1 md:px-4 md:py-2">HOME</a></li>
+                <li class="nav-item"><a href="#services"
+                        class=" hover:text-yellow-500 transition duration-200 px-2 py-1 md:px-4 md:py-2">SERVICES</a>
+                </li>
+                <li class="nav-item"><a href="#contact"
+                        class=" hover:text-yellow-500 transition duration-200 px-2 py-1 md:px-4 md:py-2">CONTACT</a>
+                </li>
+                <li class="nav-item"><a href="#about"
+                        class=" hover:text-yellow-500 transition duration-200 px-2 py-1 md:px-4 md:py-2">ABOUT</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+    <!-- Side Menu for Mobile -->
+    <div id="side-menu" class="fixed translate-x-full inset-0 z-50 bg-yellow-500 pt-8 pr-10 w-8/12 right-0 left-auto transform transition-transform duration-500 ease-in-out">
+        <div class="ml-auto flex justify-end">
+            <button id="burger-menu-opened" class="focus:outline-none">
+                <svg class="w-6 h-6 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+            </button>
+        </div>
+        <div class="flex flex-col items-center h-full pt-10 font-bold pl-6">
+            <div class="flex flex-row items-center justify-start w-full px-4 py-3 mb-3">
+                <img src="../Images/Icons/Mobile-Icons/Home.svg" alt="" class="w-6 h-6 mr-6">
+                <a href="#upperSection" class="text-black hover:text-black transition duration-300 ">HOME</a>
+            </div>
+            <div class="flex flex-row items-center justify-start w-full px-4 pb-3 mb-3">
+                <img src="../Images/Icons/Mobile-Icons/Services.svg" alt="" class="w-6 h-6 mr-2">
+                <a href="#services" class="text-black hover:text-black transition duration-300 py-2 px-4">SERVICES</a>
+            </div>
+            <div class="flex flex-row items-center justify-start w-full px-4 pb-3 mb-3">
+                <img src="../Images/Icons/Mobile-Icons/Contact.svg" alt="" class="w-6 h-6 mr-2">
+                <a href="#contact" class="text-black hover:text-black transition duration-300 py-2 px-4">CONTACT</a>
+            </div>
+            <div class="flex flex-row items-center justify-start w-full px-4 pb-3 mb-3">
+                <img src="../Images/Icons/Mobile-Icons/About.svg" alt="" class="w-6 h-6 mr-2">
+                <a href="#about" class="text-black hover:text-black transition duration-300 py-2 px-4">ABOUT</a>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-center px-40 whitespace-nowrap">
+        <div class="bg-white rounded-xl shadow-lg w-96 mx-auto mt-20 p-10 px-20">
+            <h1 class="text-3xl font-bold text-center mb-6">Sign up</h1>
+            <form action="#" method="POST">
+                <div class="mb-4">
+                    <input type="text" placeholder="Username" class="px-4 py-2 border rounded-md w-full">
+                </div>
+                <div class="mb-4">
+                    <input type="password" placeholder="Create Password" class="px-4 py-2 border rounded-md w-full">
+                </div>
+                <div class="mb-6">
+                    <input type="password" placeholder="Confirm Password" class="px-4 py-2 border rounded-md w-full">
+                </div>
+                <button type="submit" class="bg-yellow-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded w-full mb-4 transition duration-200">Sign Up</button>
+                <p class="text-center text-sm mb-4">Already have an account? <a href="#" class="text-orange-500 hover:underline">Login</a></p>
+                <div class="flex items-center justify-between mb-4">
+                    <hr class="w-full bg-zinc-300"> <span class="p-2 text-zinc-400 bg-white">OR</span> <hr class="w-full bg-zinc-300">
+                </div>
+                <div class="flex justify-center gap-4">
+                    <a href="#" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
+                        <img src="https://placehold.co/32x32" alt="Facebook" class="w-5 h-5">
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center">
+                        <img src="https://placehold.co/32x32" alt="Google" class="w-5 h-5">
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+
+
+<script src="script.js"></script>
+</html>
