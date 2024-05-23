@@ -224,14 +224,17 @@
         <div id="contactUpperSection" class="bg-black w-full pt-5 pb-20 md:pb-40">
             <h1 class="text-3xl font-bold text-white text-center py-10">GET IN TOUCH!</h1>
             <div class="flex flex-col lg:flex-row justify-between px-40 lg:px-52 align-top">
-                <div id="location-section" class="flex flex-col justify-center items-center text-center mx-4 pt-10 pb-20 lg:pb-0">
+                <div id="location-section"
+                    class="flex flex-col justify-center items-center text-center mx-4 pt-10 pb-20 lg:pb-0">
                     <div class="bg-yellow-200 rounded-full mb-4 p-4 w-max">
                         <img src="Images/Contact/location.svg" class="w-12 h-12 md:w-16 md:h-16" alt="">
                     </div>
                     <h1 class="text-white font-bold mb-1">LOCATION</h1>
-                    <h2 class="font-medium text-white text-sm">The Netherlands <br> Van Der Madeweg 1234AB <br>Amsterdam</h2>
+                    <h2 class="font-medium text-white text-sm">The Netherlands <br> Van Der Madeweg 1234AB <br>Amsterdam
+                    </h2>
                 </div>
-                <div id="phone-section" class="flex flex-col justify-center items-center text-center mx-4 pb-20 lg:pb-0">
+                <div id="phone-section"
+                    class="flex flex-col justify-center items-center text-center mx-4 pb-20 lg:pb-0">
                     <div class="bg-yellow-200 rounded-full mb-4 p-4 w-max">
                         <img src="Images/Contact/phone.svg" class="w-12 h-12 md:w-16 md:h-16" alt="">
                     </div>
@@ -251,7 +254,8 @@
             <div id="contactBottomSection" class="flex flex-col md:flex-row">
                 <div id="left-side-contact" class="flex flex-col w-full md:w-1/2 px-4 md:px-10 pt-10">
                     <h1 class="font-bold text-2xl md:text-4xl pb-4">Message Us</h1>
-                    <p class="font-medium text-lg md:text-2xl pb-4">Have a question or need assistance? We're here to help! Send us a message and our dedicated support
+                    <p class="font-medium text-lg md:text-2xl pb-4">Have a question or need assistance? We're here to
+                        help! Send us a message and our dedicated support
                         team will get back to you as soon as possible. Your satisfaction is our priority!
                     </p>
                     <img class="mx-auto" src="Images/Contact/dragonBallFighters.svg" alt="">
@@ -265,7 +269,7 @@
                         <p class="font-bold text-lg md:text-xl mb-2">MESSAGE</p>
                         <textarea name="message" id="message" cols="30" rows="5" placeholder="Message"
                             class="bg-gray-200 p-3 rounded-md mb-4 shadow-lg"></textarea>
-                            <button
+                        <button
                             class="bg-yellow-500 w-0 flex justify-center text-center text-white font-medium mt-10 py-3 px-12 rounded-md transition duration-300 hover:bg-yellow-400 hover:text-black shadow-lg">SEND</button>
                     </div>
                 </div>
@@ -275,9 +279,58 @@
     <section id="about" class="h-screen bg-white relative z-0">
         <div class="container mx-auto px-6 py-10">
             <h1 class="text-3xl font-bold text-black text-center">ABOUT</h1>
-            <!-- Additional content for ABOUT section -->
+            <div id="card-container" class="flex flex-col md:flex-row justify-between items-center mt-10">
+                <div class="w-full md:w-1/3 p-4">
+                    <div class="relative w-full h-72 perspective-1000">
+                        <div class="relative w-full h-full transform-style-3d transition-transform duration-500 ease-in-out flip-card-inner">
+                            <div class="absolute inset-0 bg-gradient-to-br from-yellow-600 to-black text-white p-6 rounded-3xl shadow-md">
+                                <h3 id="card-text" class="text-center font-medium text-xl">At DragonMerch, we're dedicated to providing fellow fans with high-quality, officially licensed merchandise that reflects the spirit of the series.</h3>
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-br from-yellow-600 to-black text-white p-6 rounded-3xl shadow-md transform rotate-y-180 backface-hidden">
+                                <p class="text-3xl font-bold my-4 flex justify-center">Our Mission</p><div class="absolute top-2 right-2 cursor-pointer text-white z-10 flip-btn">
+                            <i class="fas fa-exchange-alt text-2xl text-center text-black"><button class="bg-gray-200 rounded-3xl p-1"><img id="reverse-img" src="Images/About/reverse.svg" alt=""></button></i>
+                        </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 p-4">
+                    <div class="relative w-full h-72 perspective-1000">
+                        <div class="relative w-full h-full transform-style-3d transition-transform duration-500 ease-in-out flip-card-inner">
+                            <div class="absolute inset-0 bg-gradient-to-br from-yellow-600 to-black text-white p-6 rounded-3xl shadow-md">
+                                <h3 id="card-text" class="text-center font-medium text-xl">Each item is carefully chosen for its quality and authenticity, ensuring that fans receive nothing but the best.</h3>
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-br from-yellow-600 to-black text-white p-6 rounded-3xl shadow-md transform rotate-y-180 backface-hidden">
+                                <p class="text-3xl font-bold my-4 flex justify-center">Quality</p>
+                                <div class="absolute top-2 right-2 cursor-pointer text-white z-10 flip-btn">
+                            <i class="fas fa-exchange-alt text-2xl text-center text-black"><button class="bg-gray-200 rounded-3xl p-1"><img id="reverse-img" src="Images/About/reverse.svg" alt=""></button></i>
+                        </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 p-4">
+                    <div class="relative w-full h-72 perspective-1000">
+                        <div class="relative w-full h-full transform-style-3d transition-transform duration-500 ease-in-out flip-card-inner">
+                            <div class="absolute inset-0 bg-gradient-to-br from-yellow-600 to-black text-white p-6 rounded-3xl shadow-md">
+                                <h3 id="card-text" class="text-center font-medium text-xl">We're more than just a store - we're a passionate community of fans dedicated to bringing the excitement of Dragon Ball to life.</h3>
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-br from-yellow-600 to-black text-white p-6 rounded-3xl shadow-md transform rotate-y-180 backface-hidden">
+                                <p class="text-3xl font-bold my-4 flex justify-center">Community</p>
+                                <div class="absolute top-2 right-2 cursor-pointer text-white z-10 flip-btn">
+                            <i class="fas fa-exchange-alt text-2xl text-center text-black"><button class="bg-gray-200 rounded-3xl p-1"><img id="reverse-img" src="Images/About/reverse.svg" alt=""></button></i>
+                        </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    
+    
+
     </div>
     <footer class="h-750 bg-black w-full py-10">
         <div class="flex flex-row justify-center ">

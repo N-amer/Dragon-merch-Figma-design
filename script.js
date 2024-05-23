@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll("nav .nav-item a");
-  const navLinksMobile = document.querySelectorAll(
-    "#side-menu a:not([href='signUp.html'])"
-  );
+  const navLinksMobile = document.querySelectorAll("#side-menu a:not([href='signUp.html'])");
   const navItems = document.querySelectorAll(".nav-item");
   const burgerMenuClosed = document.getElementById("burger-menu-closed");
   const burgerMenuOpened = document.getElementById("burger-menu-opened");
@@ -18,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     sideMenu.classList.add("translate-x-full");
   });
 
-  // navbar navigations
+  // Navbar navigations
   navLinks.forEach((link) => {
     link.addEventListener("click", function (event) {
       event.preventDefault();
@@ -35,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // menu navigations
+  // Menu navigations
   navLinksMobile.forEach((link) => {
     link.addEventListener("click", function (event) {
       document.getElementById("side-menu").classList.remove("translate-x-0");
@@ -47,5 +45,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
       event.preventDefault();
     });
+  });
+
+  // Cards flip
+  document.querySelectorAll('.flip-btn').forEach(item => {
+    item.addEventListener('click', event => {
+      const cardInner = item.closest('.relative').querySelector('.flip-card-inner');
+      cardInner.classList.toggle('rotate-y-180');
+    })
   });
 });
