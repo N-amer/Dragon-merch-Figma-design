@@ -27,3 +27,33 @@ section {
     -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
     -o-transform: matrix(-1, 0, 0, 1, 0, 0);
   }
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Voeg deze klassen toe aan de linker- en rechterkanten */
+  .animate-left-to-right {
+    animation: slideInLeft 2.0s forwards;
+  }
+  
+  .animate-right-to-left {
+    animation: slideInRight 2.0s forwards;
+  }
+  .merch-item {
+    display: none;
+  }
+  

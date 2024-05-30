@@ -1,10 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll("nav .nav-item a");
-  const navLinksMobile = document.querySelectorAll("#side-menu a:not([href='signUp.html'])");
+  const navLinksMobile = document.querySelectorAll(
+    "#side-menu a:not([href='signUp.html'])"
+  );
   const navItems = document.querySelectorAll(".nav-item");
   const burgerMenuClosed = document.getElementById("burger-menu-closed");
   const burgerMenuOpened = document.getElementById("burger-menu-opened");
   const sideMenu = document.getElementById("side-menu");
+  const merchItems = document.querySelectorAll("[id^='merch-']");
 
   burgerMenuClosed.addEventListener("click", () => {
     sideMenu.classList.remove("translate-x-full");
@@ -47,11 +50,45 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Cards flip
-  document.querySelectorAll('.flip-btn').forEach(item => {
-    item.addEventListener('click', event => {
-      const cardInner = item.closest('.relative').querySelector('.flip-card-inner');
-      cardInner.classList.toggle('rotate-y-180');
-    })
+  // Function to animate a specific merch item
+  function animateMerchItem(merchItem) {
+    const leftSide = merchItem.querySelector(".leftSide");
+    const rightSide = merchItem.querySelector(".rightSide");
+  
+    // Trigger reflow to apply initial styles
+    leftSide.offsetWidth;
+    rightSide.offsetWidth;
+    
+    // Add transition properties after initial setup
+    leftSide.style.transition = "opacity 2s";
+    rightSide.style.transition = "opacity 2s";
+  
+    // Set opacity to 1 after a short delay to allow the transition to be observed
+    setTimeout(() => {
+      leftSide.classList.add("animate-left-to-right");
+      rightSide.classList.add("animate-right-to-left");
+      leftSide.style.opacity = 1;
+      rightSide.style.opacity = 1;
+    }, 100); // Adjust delay as needed
+  }
+  
+  // Function to check if an element is in viewport
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+  
+  document.addEventListener("scroll", () => {
+    merchItems.forEach((item) => {
+      if (isInViewport(item)) {
+        animateMerchItem(item);
+      }
+    });
   });
 });
