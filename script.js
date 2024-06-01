@@ -8,6 +8,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const burgerMenuOpened = document.getElementById("burger-menu-opened");
   const sideMenu = document.getElementById("side-menu");
   const merchItems = document.querySelectorAll("[id^='merch-']");
+  const homeImage = document.getElementById("shenron");
+
+  function animateHomeImage() {
+    homeImage.style.transition = "opacity 2s";
+    homeImage.classList.remove("opacity-0");
+    homeImage.classList.add("opacity-1");
+  }
+  setTimeout(() => {
+    animateHomeImage();
+  }, 100);
+  
 
   burgerMenuClosed.addEventListener("click", () => {
     sideMenu.classList.remove("translate-x-full");
@@ -50,19 +61,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+
   // Function to animate a specific merch item
   function animateMerchItem(merchItem) {
     const leftSide = merchItem.querySelector(".leftSide");
     const rightSide = merchItem.querySelector(".rightSide");
-  
+
     // Trigger reflow to apply initial styles
     leftSide.offsetWidth;
     rightSide.offsetWidth;
-    
+
     // Add transition properties after initial setup
     leftSide.style.transition = "opacity 2s";
     rightSide.style.transition = "opacity 2s";
-  
+
     // Set opacity to 1 after a short delay to allow the transition to be observed
     setTimeout(() => {
       leftSide.classList.add("animate-left-to-right");
@@ -71,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
       rightSide.style.opacity = 1;
     }, 100); // Adjust delay as needed
   }
-  
+
   // Function to check if an element is in viewport
   function isInViewport(element) {
     const rect = element.getBoundingClientRect();
@@ -79,11 +91,11 @@ document.addEventListener("DOMContentLoaded", function () {
       rect.top >= 0 &&
       rect.left >= 0 &&
       rect.bottom <=
-        (window.innerHeight || document.documentElement.clientHeight) &&
+      (window.innerHeight || document.documentElement.clientHeight) &&
       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
   }
-  
+
   document.addEventListener("scroll", () => {
     merchItems.forEach((item) => {
       if (isInViewport(item)) {
