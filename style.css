@@ -1,3 +1,9 @@
+#card-text {
+  display: block;
+  -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+  -o-transform: matrix(-1, 0, 0, 1, 0, 0);
+}
  #upperSection {
 clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
@@ -21,12 +27,6 @@ section {
       transform: rotateY(180deg);
     }
   }
-  #card-text {
-    display: block;
-    -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
-    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
-    -o-transform: matrix(-1, 0, 0, 1, 0, 0);
-  }
   @keyframes slideInLeft {
     from {
       transform: translateX(-100%);
@@ -44,8 +44,22 @@ section {
       transform: translateX(0);
     }
   }
+
+  @keyframes top-to-bottom {
+    from {
+      transform: translateY(-60px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
   
-  /* Voeg deze klassen toe aan de linker- en rechterkanten */
+  .animate-top-to-bottom {
+    animation: top-to-bottom 2s ease forwards;
+  }
+  
   .animate-left-to-right {
     animation: slideInLeft 2.0s forwards;
   }
@@ -55,5 +69,11 @@ section {
   }
   .merch-item {
     display: none;
+  }
+  .opacity-0 {
+    opacity: 0;
+  }
+  .opacity-1 {
+    opacity: 1;
   }
   

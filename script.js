@@ -10,15 +10,49 @@ document.addEventListener("DOMContentLoaded", function () {
   const merchItems = document.querySelectorAll("[id^='merch-']");
   const homeImage = document.getElementById("shenron");
 
+  function animateHomeText2() {
+    const homeText2 = document.querySelector("#homeText2");
+    
+ 
+    homeText2.offsetHeight;
+    
+    homeText2.style.transition = "opacity 2s";
+
+    homeText2.classList.remove("opacity-0");
+    homeText2.classList.add("opacity-1");
+
+    homeText2.classList.add("animate-top-to-bottom");
+  }
+
+  function animateHomeText1() {
+    const homeText = document.querySelector("#homeText");
+
+    homeText.offsetHeight;
+    
+    homeText.style.transition = "opacity 2s";
+
+    homeText.classList.remove("opacity-0");
+    homeText.classList.add("opacity-1");
+
+    homeText.classList.add("animate-top-to-bottom");
+    
+  }
+
   function animateHomeImage() {
     homeImage.style.transition = "opacity 2s";
     homeImage.classList.remove("opacity-0");
     homeImage.classList.add("opacity-1");
   }
-  setTimeout(() => {
-    animateHomeImage();
+  
+  setTimeout(() => {	
+    animateHomeText1();
   }, 100);
   
+  setTimeout(() => {
+    animateHomeImage();
+    animateHomeText2();
+  }, 900);
+
 
   burgerMenuClosed.addEventListener("click", () => {
     sideMenu.classList.remove("translate-x-full");
